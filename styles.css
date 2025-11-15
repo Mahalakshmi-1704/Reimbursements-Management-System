@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f5f5;
+}
+
+header {
+  background: olivedrab;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+header #home {
+  text-align: left;
+  margin-left: 15px;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+#navbar ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar ul li button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+
+#about p {
+  margin: 10px 0;
+}
+
+.login-register-container {
+  display: block;
+  text-align: center;
+}
+
+.login-register-container div {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin: 10px;
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+form {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+form input, form select, form button {
+  display: block;
+  width: 95%;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+button {
+  background: olivedrab;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+
+.status {
+  padding: 3px 8px;
+  border-radius: 10px;
+  color: white;
+}
+
+.status.approved { background-color: green; }
+.status.rejected { background-color: red; }
+.status.pending { background-color: orange; }
+
+
+footer {
+  background: olivedrab;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}

@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1758784175225,
+      "username": "maha17",
+      "passwordHash": "$2b$10$tlncW2wx5I5i2mVXEMWR3OPzjjWZdXwix4Cna8Cbx/rTPFFKiM.TO",
+      "role": "employee"
+    },
+    {
+      "id": 1758787331586,
+      "username": "bruno21",
+      "passwordHash": "$2b$10$IBDs4Fzb6EoccoA5jheMaevrK3CXyLFfzqXoSMwQ6CloQ6Bl8FRKi",
+      "role": "manager"
+    }
+  ],
+  "claims": [
+    {
+      "id": 1758787222690,
+      "userId": 1758784175225,
+      "user": "maha17",
+      "expense": "travel",
+      "amount": 450,
+      "status": "Approved",
+      "receiptUrl": null,
+      "createdAt": "2025-09-25T08:00:22.690Z"
+    }
+  ]
+}

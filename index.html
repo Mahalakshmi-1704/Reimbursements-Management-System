@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reimbursement Management System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1 id="home">Reimbursement Management System</h1>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li id="navLogin"><a href="#login">Login</a></li>
+        <li id="navRegister"><a href="#register">Register</a></li>
+        <li id="welcomeMsg" style="display:none; font-weight:bold;"></li>
+        <li><button id="logoutBtn" style="display:none;">Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        The Reimbursement Management System streamlines the process of submitting and managing expense claims.
+      </p>
+      <p>
+        Employees can submit expenses for travel, meals, office supplies, and other official purposes. Managers can quickly review claims, approve or reject them, and track overall expenses.
+      </p>
+      <p>
+        This system ensures transparency, reduces manual work, and speeds up reimbursements. It also provides dashboards, file uploads, and real-time claim tracking.
+      </p>
+    </section>
+
+    <section class="login-register-container">
+      <div id="login">
+        <h2>Login</h2>
+        <form>
+          <label for="uname">Username:</label>
+          <input type="text" id="uname" required />
+          <label for="pwd">Password:</label>
+          <input type="password" id="pwd" required />
+          <label for="role">Login as:</label>
+          <select id="role" required>
+            <option value="employee">Employee</option>
+            <option value="manager">Manager</option>
+          </select>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div id="register">
+        <h2>Register</h2>
+        <form>
+          <label for="newuser">Username:</label>
+          <input type="text" id="newuser" required />
+          <label for="newpwd">Password:</label>
+          <input type="password" id="newpwd" required />
+          <label for="regrole">Register as:</label>
+          <select id="regrole" required>
+            <option value="employee">Employee</option>
+            <option value="manager">Manager</option>
+          </select>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="employee-dashboard" style="display: none">
+      <h2>Employee Dashboard</h2>
+      <form>
+        <label for="expense">Expense Type:</label>
+        <input type="text" id="expense" placeholder="Travel, Food, etc." required />
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" required />
+        <label for="receipt">Upload Receipt:</label>
+        <input type="file" id="receipt" />
+        <button type="submit">Submit Claim</button>
+      </form>
+      <h3>Your Claims</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Expense</th>
+            <th>Amount</th>
+            <th>Receipt</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="manager-dashboard" style="display: none">
+      <h2>Manager Dashboard</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Employee</th>
+            <th>Expense</th>
+            <th>Amount</th>
+            <th>Receipt</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Email:</strong> mailtoreimburse@gmail.com</p>
+      <p><strong>Phone:</strong> +91 904929388</p>
+    </section>
+    <p id="lic">&copy; 2025 Reimbursement Management System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
